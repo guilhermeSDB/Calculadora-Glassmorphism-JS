@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec078606de.js" crossorigin="anonymous"></script>
+    <title>Glassmorphism Calculator JS</title>
+</head>
+
+
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <textarea id="resultado" name="" id="" cols="0" rows="2" readonly></textarea>
+            <i id="historicoBtn" class="fas fa-history"></i>
+            <table>
+                <tr>
+                    <td><button class="botao options" onclick="clean()">C</button></td>
+                    <td><button class="botao options" onclick="insert(' / ')">/</button></td>
+                    <td><button class="botao options" onclick="insert(' * ')">*</button></td>
+                    <td><button class="botao options" onclick="back()"><i class="fas fa-backspace"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao options" onclick="insert(' - ')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao options" onclick="insert(' + ')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao options" style="height: 100px;"
+                            onclick="exibirResult()">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert(' % ')">%</button></td>
+                    <td><button class="botao" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="historico" class="hidden">
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
